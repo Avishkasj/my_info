@@ -14,7 +14,14 @@ class MyApp extends StatelessWidget {
       home:Scaffold(
         backgroundColor: Colors.amberAccent,
         body:SafeArea(
-          child: Text('Avishka'),
+          child: Column(
+            children: [
+               CircleAvatar(
+                 radius: 60,
+                 backgroundImage: AssetImage('images/imag2.png'),
+               )
+            ],
+          )
         )
       )
     );
